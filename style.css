@@ -1,0 +1,169 @@
+
+    .h3{
+        color: black;                       /*Bytter färg och storlek  */
+        font-size: 1.1em;
+    }
+    .body{
+                
+        background-size: cover;                 /*Övertäkt storlek */
+        background-position: center;           /*Position imitten*/
+        box-sizing: border-box;               /*Rutornas stolek*/
+        background-color: mistyrose;        /*Bakgrundsfärg*/
+    }
+
+    .background{
+        position: relative;
+        text-align: center;    /*Lägg text i mitten av sidan*/
+        color: white;
+        background-color: mistyrose;
+    }
+    .centered{
+        position:absolute;
+        font-size: 20px;        
+        top: 10.5%;               /*Text storlek och positioner*/
+        left: 50%; 
+        transform: translate(-50%,-50%)
+    }
+
+    .wrapper{
+        display: grid;
+        /*grid-template-columns:1fr 2 fr 1fr;     annan alternativ*/
+        grid-template-columns:repeat(3,1fr);    /*Positioner hur layout ska ser ut. 3* samma storlek*/
+        grid: gap 2em;                              /*Mellanrum mellan olika rutor*/
+       /* grid-auto-rows: 100px;*/
+        grid-auto-rows: minmax(100px, auto);        /*De ska vara 100px, sedan varierar rutorna på samma rad beror på hur stor text/bild man har. */
+        justify-items: stretch;                 /*Sträker ut rutor*/
+        /*Hur det kan ser ut annars
+        .wrapper{
+            grid-colum:1/3 ; 
+            grid-rows: 1/3 ;*/
+    }
+
+    .wrapper > div{
+        background:rgb(230, 204, 213);
+        padding:1em;                    /*Avståndet mellan bakgrunden och layouten på upp o under delen. */
+        margin:1em;                     /*Avståndet mellan bakgrunden och layouten på vänster o höger delen. */
+    }
+
+    div.Hotell:hover {
+    border: 1px solid #777;             /*Kanter färg när man har musen ovanpå*/
+    }
+
+    .Texter{
+        color: black;                   /*Texterfärg*/
+    }
+
+    .wrapper > div:nth-child(odd){ /*Odda tals rutor ska ha en annan färg för att underlätt läsaren.*/
+        background:rgb(200, 152, 179);
+    }
+
+
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+      } 
+
+     body{
+            
+            background-size: cover;
+            background-position: center;
+            font-family:sans-serif;             /*Ändra texttyp*/
+            background-color: mistyrose;
+        }
+        .meny{
+            background:mistyrose;
+            text-align: center ;                /*Ska va imitten*/
+        }
+        .meny ul{
+            display:inline-flex;                /*Lägg listorna i samma rad*/
+            list-style:none;                    /*Vilken typ av lista*/
+            color:#fff;
+        }
+        .meny ul li{
+            width:120px;
+            margin:21px;                        /*Storlek på texten på meny*/
+            padding:21px;
+        }
+        .meny ul li a{
+            text-decoration:none;               /*Tar bort linje under*/
+            color:rgb(0, 0, 0);
+            font-size: 1.2em;
+        }
+        .active, .meny ul li:hover{             /*cover meny*/
+            background:white;                 /*cover färg*/
+            border-radius:3px;                  /*cover storlek*/
+        }
+
+
+
+        .tg  {
+            position:center;        /*Lägg den i mitten. KODEN HÄR FUNKAR INTE*/
+            border-collapse:collapse;      /*Typ av rutor*/
+            border-spacing:0;               /*Ingen mellanrum*/
+        }
+
+        .tg td{
+            border-color:mistyrose;
+            border-style:hidden;            /*Kanter typ*/
+            border-width:1px;
+            font-family:Arial, sans-serif;     /*Texttyp*/
+            font-size:12px;                    /*Storlek*/
+            overflow:hidden;padding:10px 5px;       /*Spridningseffekter gömd*/
+            word-break:normal;                  /*Ord brytning normal.*/
+        }
+        .tg .tg-0pky{
+            border-color:mistyrose;
+            text-align:left;
+            vertical-align:top;
+        }
+        .tg .tg-0lax{
+            text-align:left;
+            vertical-align:top          /*Gör att bilderna ligger ovanför länkarna*/
+        }
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;       /*Färg på rutan*/
+            border-radius: 25px;            /*Form av den rutan*/
+            box-sizing: border-box;
+          }
+          
+          input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;     /*Färg på knappen*/
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;            /*Form av rutan*/
+            cursor: pointer;                /*Typ av knappen*/
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;       /*Ändra färg när man trycj på den*/
+          }
+          
+          .kontakt{
+            border-radius: 25px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            position:absolute;
+            font-size: 15px;        
+            top: 50%;               /*Text storlek och positioner*/
+            left: 50%; 
+            transform: translate(-50%,-50%)
+          }
+          .skickats{
+            background-color: mistyrose;
+            position:absolute;
+            font-size: 30px;        
+            top: 50%;               /*Text storlek och positioner*/
+            left: 50%; 
+            transform: translate(-50%,-50%)
+
+          }
